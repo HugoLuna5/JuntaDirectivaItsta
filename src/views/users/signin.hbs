@@ -1,0 +1,59 @@
+<link rel="stylesheet" href="/css/signup.css" />
+
+<div class="container">
+
+{{> errors}}
+  <div class="row">
+
+    <div class="col-8 offset-2 mt-5">
+      <main class="form-signin h-flex">
+        <form action="/users/signin" method="POST">
+
+          <div class="cImg text-center">
+            <img
+              class="mb-4"
+              src="/img/logo.png"
+              alt=""
+              width="72"
+              height="72"
+            />
+          </div>
+
+          <h1 class="h3 mb-3 fw-normal text-center">Por favor, inicie sesion</h1>
+
+          <div class="form-floating">
+            <input
+              type="email"
+              class="form-control"
+              id="floatingInput"
+              placeholder="name@example.com"
+            />
+            <label for="floatingInput">Correo electronico</label>
+          </div>
+          <div class="form-floating">
+            <input
+              type="password"
+              class="form-control"
+              id="floatingPassword"
+              placeholder="Password"
+            />
+            <label for="floatingPassword">Contraseña</label>
+          </div>
+
+          <div class="checkbox mb-3">
+            <label>
+              <input type="checkbox" value="remember-me" />
+              Recordarme
+            </label>
+          </div>
+          <button class="w-100 btn btn-lg btn-primary" type="submit">
+            ENTRAR
+          </button>
+          <p class="mt-5 mb-3 text-muted text-center">&copy; 2021</p>
+        </form>
+      </main>
+    </div>
+
+  </div>
+
+</div>
